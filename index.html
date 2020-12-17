@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Materialize Sandbox javascript Widget</title>
+    </head>
+    <body>
+        <div class="container">
+            <!-- CAROUSEL -->
+            <h1>CAROUSEL</h1>
+            <div class="carousel">
+                <a class="carousel-item" href="#one!"><img src="http://materializecss.com/images/sample-1.jpg"></a>
+                <a class="carousel-item" href="#two!"><img src="http://materializecss.com/images/sample-1.jpg"></a>
+                <a class="carousel-item" href="#three!"><img src="http://materializecss.com/images/sample-1.jpg"></a>
+                <a class="carousel-item" href="#four!"><img src="http://materializecss.com/images/sample-1.jpg"></a>
+                <a class="carousel-item" href="#five!"><img src="http://materializecss.com/images/sample-1.jpg"></a>
+            </div>
+
+              <!-- CAROUSEL FULL SLIDER -->
+            <h1>CAROUSEL FULL SLIDER</h1>
+            <div class="carousel carousel-slider">
+                <a class="carousel-item" href="#one!"><img src="http://materializecss.com/images/sample-1.jpg" style="width: 800px; height: 400px;"></a>
+                <a class="carousel-item" href="#two!"><img src="http://materializecss.com/images/sample-1.jpg" style="width: 800px; height: 400px;"></a>
+                <a class="carousel-item" href="#three!"><img src="http://materializecss.com/images/sample-1.jpg" style="width: 800px; height: 400px;"></a>
+                <a class="carousel-item" href="#four!"><img src="http://materializecss.com/images/sample-1.jpg" style="width: 800px; height: 400px;"></a>
+                <a class="carousel-item" href="#five!"><img src="http://materializecss.com/images/sample-1.jpg" style="width: 800px; height: 400px;"></a>
+              </div>
+        </div><!--./container-->
+        <div style="height: 500px;"></div>
+    
+        <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script>
+          $(document).ready(function() {
+            // Init Carousel
+            $('.carousel').carousel();
+            
+            // Init Carousel Slider
+            $('.carousel.carousel-slider').carousel({fullWidth:true});
+          })
+      </script>
+    </body>
+  </html>
